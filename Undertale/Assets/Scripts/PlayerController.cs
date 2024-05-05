@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
     [SerializeField] private Transform _groundChekerPivot;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _checkGroundRadius = 0.4f;
+    [SerializeField] private Animator anim;
     private CharacterController _controller;
     private float _velocity;
     private Vector3 _moveDirection;
@@ -31,6 +32,9 @@ public class Character : MonoBehaviour
     private void Update()
     {
         _moveDirection = new Vector3(x: -Input.GetAxis("Vertical"), y: 0f, z: Input.GetAxis("Horizontal") );
+
+        if (_moveDirection != Vector3.zero) anim.SetBool("IsWalking", true);
+        else anim.SetBool("IsWalking", true);
     }
 
     private bool IsOnTheGround()
