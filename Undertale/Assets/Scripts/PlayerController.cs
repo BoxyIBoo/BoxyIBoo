@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-[RequireComponent (typeof(CharacterController))]
-public class Character : MonoBehaviour
+[RequireComponent(typeof(CharacterController))]
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _gravity = -9.81f;
@@ -18,11 +16,12 @@ public class Character : MonoBehaviour
 
     private void Awake()
     {
-        _controller = GetComponent<CharacterController> ();
+        _controller = GetComponent<CharacterController>();
     }
     private void FixedUpdate()
     {
-        if (IsOnTheGround()){
+        if (IsOnTheGround())
+        {
             _velocity = -2;
         }
 
@@ -31,21 +30,21 @@ public class Character : MonoBehaviour
     }
     private void Update()
     {
-        _moveDirection = new Vector3(x: -Input.GetAxis("Vertical"), y: 0f, z: Input.GetAxis("Horizontal") );
+        _moveDirection = new Vector3(x: -Input.GetAxis("Vertical"), y: 0f, z: Input.GetAxis("Horizontal"));
 
         if (_moveDirection != Vector3.zero) anim.SetBool("IsWalking", true);
-        else anim.SetBool("IsWalking", true);
+        else anim.SetBool("IsWalking", false);
     }
 
     private bool IsOnTheGround()
     {
-        bool result = Physics.CheckSphere(_groundChekerPivot.position , _checkGroundRadius , _groundMask);
+        bool result = Physics.CheckSphere(_groundChekerPivot.position, _checkGroundRadius, _groundMask);
 
         return result;
     }
     private void Move(Vector3 direction)
     {
-        _controller.Move (direction * _speed * Time.fixedDeltaTime);
+        _controller.Move(direction * _speed * Time.fixedDeltaTime);
     }
     private void DoGravity()
     {
@@ -54,200 +53,3 @@ public class Character : MonoBehaviour
         _controller.Move(Vector3.up * _velocity * Time.fixedDeltaTime);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
