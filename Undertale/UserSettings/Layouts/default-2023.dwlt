@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 80
+  controlID: 47
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 124
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 78
+  controlID: 93
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 79
+  controlID: 46
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 522
     height: 580
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -490,14 +490,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -7078615522339853226, guid: 3fa4f577e57c16b48a8aeaad4ca40091, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.40385243
+    - e00: 0.6448833
       e01: 0
       e02: 0
-      e03: 3.7159576
+      e03: -93.98581
       e10: 0
-      e11: 0.40385243
+      e11: 0.6448833
       e12: 0
-      e13: 264.46945
+      e13: 86.78107
       e20: 0
       e21: 0
       e22: 1
@@ -1011,9 +1011,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 27.8052, y: 14.462304, z: -19.897333}
+    m_Target: {x: 37.691216, y: 32.92677, z: -15.825929}
     speed: 2
-    m_Value: {x: 27.8052, y: 14.462304, z: -19.897333}
+    m_Value: {x: 37.691216, y: 32.92677, z: -15.825929}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1059,9 +1059,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0151159195, y: -0.98403054, z: 0.09406696, w: -0.1517373}
+    m_Target: {x: 0.32107607, y: -0.64633197, z: 0.34771332, w: 0.5989047}
     speed: 2
-    m_Value: {x: -0.015253819, y: -0.9835965, z: 0.09402456, w: -0.1531812}
+    m_Value: {x: 0.32010955, y: -0.64671516, z: 0.34666917, w: 0.5992577}
   m_Size:
     m_Target: 0.78707075
     speed: 2
@@ -1128,10 +1128,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 214}
+      scrollPos: {x: 0, y: 144}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 06fbffff10610000ae770000f897000024980000269800002898000032980000449800007a980000aa980000c0980000ce980000
+      m_ExpandedIDs: 7ef9ffff16790000507c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1302,7 +1302,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/frisk-character-model/source
+    - Assets/Animations
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1312,16 +1312,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 63
   m_LastFolders:
-  - Assets/Models/frisk-character-model/source
+  - Assets/Animations
   m_LastFoldersGridSize: 63
   m_LastProjectPath: C:\Users\acer\Documents\BoxyIBoo\Undertale
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 540e0100
-    m_LastClickedID: 69204
-    m_ExpandedIDs: 00000000149a0000120e01001e0e01004e0e010090100100a610010000ca9a3bffffff7f
+    m_SelectedIDs: ba9b0000
+    m_LastClickedID: 39866
+    m_ExpandedIDs: 00000000589b0000be9b0000e89b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1349,7 +1349,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000149a0000
+    m_ExpandedIDs: 00000000589b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
